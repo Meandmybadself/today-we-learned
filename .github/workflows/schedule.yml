@@ -1,10 +1,7 @@
 name: "cron-action"
 on:
-  push:
-    branches:
-      - main
   schedule:
-    - cron: "*/15 * * * *" # Every 15 minutes
+    - cron: "*/10 * * * *" # Every 15 minutes
 
 jobs:
   singleJobName:
@@ -14,9 +11,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm run start
+      - run: npm i --silent && npm run start
     env:
       API_KEY: ${{ secrets.API_KEY }}
       API_KEY_SECRET: ${{ secrets.API_KEY_SECRET }}
       ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }
+      ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}

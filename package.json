@@ -1,0 +1,24 @@
+{
+  "name": "today-we-learned",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meandmybadself/today-we-learned.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meandmybadself/today-we-learned/issues"
+  },
+  "homepage": "https://github.com/Meandmybadself/today-we-learned#readme",
+  "dependencies": {
+    "moment": "^2.29.4",
+    "twitter-api-v2": "^1.12.7"
+  }
+}
